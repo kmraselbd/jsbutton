@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+</head>
+<body>
+
+<button onclick="alert('hello everyone')">Click me</button>
+
+<button onclick="myMessage1()">click here1</button>
+
+<button onclick="myMessage2()">click here2</button>
+
+<button onclick="myMessage3()">click here3</button>
+
+<button onclick="myMessage4()">click here4</button>
+
+<p id="paraId">Paragraph demo</p>
+
+<button onclick="myPicture1()">Natural secnery1</button>
+<button onclick="myPicture2()">Natural secnery2</button>
+<p></p>
+<img id="image1" src="#" alt="" height="200" width="300">
+<img id="image2" src="#" alt="" height="200" width="300">
+
+
+
+
+
+
+<script>
+
+
+function myMessage1(){
+    alert("Hi Button 1");
+}
+
+function myMessage2(){
+    alert("Hi Button 2");
+}
+
+var myVar = document.querySelector('#paraId');
+function myMessage3(){
+        myVar.innerHTML = "You have clicked on button 3";
+}
+
+function myMessage4(){
+        myVar.innerHTML = "You have clicked on button 4";
+}
+
+
+var myPic1 = document.querySelector('#image1');
+function myPicture1(){
+        myPic1.src = "n1.jpg";
+
+}
+var myPic2 = document.querySelector('#image2');
+function myPicture2(){
+    myPic2.src = "n2.jpg";
+}
+
+
+    </script>
+</body>
+</html>
